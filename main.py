@@ -192,21 +192,11 @@ def main(args: DictConfig):
                 print("'event_volume' キーは存在しません。")
         print("Prediction completed.")
 
-<<<<<<< HEAD
     # ------------------
     #  save submission
     # ------------------
     file_name = "submission"
     save_optical_flow_to_npy(flow, file_name)
-=======
-    # submissionファイルの保存
-    file_name = "submission.npy"
-    try:
-        save_optical_flow_to_npy(flow, file_name)
-        print(f"Submission saved to {file_name}")
-    except Exception as e:
-        print(f"Error saving submission: {e}")
->>>>>>> 29bbad8fa5a1e6b9ab2648678e986f563b8eaac7
 
 if __name__ == "__main__":
     main()
